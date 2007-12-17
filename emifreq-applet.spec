@@ -11,7 +11,6 @@ License: GPL
 Group: Monitoring
 Url: http://zzrough.free.fr
 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: perl-XML-Parser
 BuildRequires: pkgconfig
