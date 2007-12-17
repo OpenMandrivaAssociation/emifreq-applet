@@ -23,7 +23,7 @@ BuildRequires: libGConf2-devel
 #Requires: libGConf2
 Requires: gnome-panel
 
-PreReq: rpm-helper, /sbin/chkconfig
+Requires(post,preun): rpm-helper, chkconfig
 
 %description
 EmiFreq applet is a little GNOME applet that shows/control
