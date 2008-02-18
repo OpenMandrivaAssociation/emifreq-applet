@@ -4,7 +4,7 @@
 Summary : EmiFreq applet is just a little applet to show and control the CPU
 Name: %name
 Version: %{version}
-Release: %mkrel 2
+Release: %mkrel 3
 Source:  %{name}-%{version}.tar.bz2
 Source1: emifreq-applet-initscript.bz2
 License: GPL
