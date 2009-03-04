@@ -17,6 +17,7 @@ BuildRequires: intltool
 BuildRequires: gnome-panel-devel
 BuildRequires: libgnomeui2-devel
 BuildRequires: libGConf2-devel
+BuildRequires: libglade2.0-devel
 
 #Requires: libpanel-applet
 #Requires: libGConf2
