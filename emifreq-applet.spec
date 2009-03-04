@@ -1,18 +1,16 @@
 %define name emifreq-applet
 %define version 0.18
 
-Summary : EmiFreq applet is just a little applet to show and control the CPU
-Name: %name
-Version: %{version}
-Release: %mkrel 5
-Source:  %{name}-%{version}.tar.bz2
-Source1: emifreq-applet-initscript.bz2
-License: GPL
-Group: Monitoring
-Url: http://zzrough.free.fr
-
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
+Name:       %name
+Version:    %{version}
+Release:    %mkrel 7
+Summary:    EmiFreq applet is just a little applet to show and control the CPU
+License:    GPL
+Group:      Monitoring
+Url:        http://zzrough.free.fr
+Source0:    %{name}-%{version}.tar.bz2
+Source1:    emifreq-applet-initscript.bz2
+Patch:      emifreq-applet-0.18-fix-format-errors.patch
 BuildRequires: perl-XML-Parser
 BuildRequires: pkgconfig
 BuildRequires: intltool
@@ -23,8 +21,8 @@ BuildRequires: libGConf2-devel
 #Requires: libpanel-applet
 #Requires: libGConf2
 Requires: gnome-panel
-
 Requires(post,preun): rpm-helper, chkconfig
+BuildRoot: %{_tmppath}/%{name}-%{version}
 
 %description
 EmiFreq applet is a little GNOME applet that shows/control
@@ -35,6 +33,7 @@ of the sysfs.
 
 %prep
 %setup -q
+%patch -p 1
 
 %build
 %configure2_5x
