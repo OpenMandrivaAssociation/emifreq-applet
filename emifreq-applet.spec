@@ -3,7 +3,7 @@
 
 Name:       %name
 Version:    %{version}
-Release:    %mkrel 8
+Release:    %mkrel 9
 Summary:    EmiFreq applet is just a little applet to show and control the CPU
 License:    GPL
 Group:      Monitoring
