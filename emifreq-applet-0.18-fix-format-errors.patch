@@ -1,0 +1,12 @@
+diff -Naur emifreq-applet-0.18/src/ef-utils.c emifreq-applet-0.18-fix-format-errors/src/ef-utils.c
+--- emifreq-applet-0.18/src/ef-utils.c	2004-09-11 22:52:53.000000000 +0200
++++ emifreq-applet-0.18-fix-format-errors/src/ef-utils.c	2009-03-04 20:45:17.000000000 +0100
+@@ -55,7 +55,7 @@
+ 	dialog = gtk_message_dialog_new_with_markup (NULL, 
+ 			GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
+ 			GTK_MESSAGE_ERROR, GTK_BUTTONS_OK,
+-			msg);
++			"%s", msg);
+ 
+ 	gtk_dialog_run (GTK_DIALOG (dialog));
+ 
