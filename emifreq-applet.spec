@@ -7,7 +7,7 @@ Release:    %mkrel 10
 Summary:    EmiFreq applet is just a little applet to show and control the CPU
 License:    GPL
 Group:      Monitoring
-Url:        http://zzrough.free.fr
+Url:        https://zzrough.free.fr
 Source0:    %{name}-%{version}.tar.bz2
 Source1:    emifreq-applet-initscript.bz2
 Patch:      emifreq-applet-0.18-fix-format-errors.patch
