@@ -11,6 +11,11 @@ Url:        https://zzrough.free.fr
 Source0:    %{name}-%{version}.tar.bz2
 Source1:    emifreq-applet-initscript.bz2
 Patch:      emifreq-applet-0.18-fix-format-errors.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: perl-XML-Parser
 BuildRequires: pkgconfig
 BuildRequires: intltool
